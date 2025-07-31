@@ -1,0 +1,81 @@
+
+#page-sidebar {
+  background: #239470;
+  border-right: 0.5px solid #dcdddf;
+}
+/* .pf-c-nav__list {
+  border-bottom: none;
+} */
+.pf-c-nav__item.pf-m-expandable::before {
+  border-bottom: none;
+}
+.pf-c-nav__link {
+  color: white;
+}
+
+
+.pf-c-nav__link::before {
+  border-bottom: none;
+}
+
+.pf-c-nav__link.pf-m-current {
+  background: white;
+  color: #239470;
+}
+
+
+.pf-c-nav__link:hover {
+  background: white;
+  color: #239470;
+}
+
+.pf-c-page__header {
+  background: white;
+  border-bottom: 0.5px solid #dcdddf;
+}
+
+#nav-toggle {
+  color: #239470;
+}
+
+.pf-c-page__header-brand-link img {
+  display: none;
+}
+
+.pf-c-page__header-brand-link::before {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 40px;
+  background: url('../img/getitdone.png') no-repeat center center;
+  background-size: contain;
+}
+
+
+.pf-c-dropdown__toggle-icon, .pf-c-dropdown__toggle-text {
+   color: rgb(98, 95, 95);
+}
+
+#save-btn {
+  background: #239470;
+}
+
+#cancel-btn {
+  color: #CB1A14;
+}
+
+input:focus {
+    border: 2px solid #239470;
+    outline: none;
+    border-radius: 5px;
+}
+input {
+    border-bottom: 1px solid #239470;
+}
+
+input:hover {
+    border-bottom: 1px solid #239470;
+}
+.pf-c-jump-links__item.pf-m-current a::before {
+  border-left: 3px solid #239470;
+}
