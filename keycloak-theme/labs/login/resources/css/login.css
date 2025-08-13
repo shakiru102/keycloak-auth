@@ -6,9 +6,9 @@
 }
 
 .login-pf body {
-    /* background: url("../img/labs.png") no-repeat center center fixed; */
+    background: url("../img/labs-bg.jpg") no-repeat center center fixed;
     /* background: rgb(41, 223, 132); */
-    background: rgb(51, 77, 219);
+    /* background: rgb(51, 77, 219); */
     background-size: cover;
     height: 100%;
 }
@@ -27,22 +27,29 @@ p.instruction {
 
 .pf-c-button.pf-m-control {
     border-color: rgba(230, 230, 230, 0.5);
+    display: none;
+
 }
 input#username:focus, input#password:focus {
-    border-bottom: 1px solid rgb(51, 77, 219);
+    border: 1px solid #D0D5DD;
     outline: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    background: #ffffffe9;
 }
 input#username, input#password {
-    border-bottom: 1px solid rgb(51, 77, 219);
+    border: 1px solid #D0D5DD;
+    outline: none;
+    border-radius: 4px;
+    background: #ffffffe9;
 }
 button.pf-c-button.pf-m-control::after {
-    border-bottom: 1px solid rgb(51, 77, 219);
+    border-bottom: none;
+    display: none;
 }
 
 
 #kc-login {
-  background-color: rgb(51, 77, 219); /* blue */
+  background-color: #142854; /* blue */
   color: white;
   border: none;
   padding: 12px 24px;
@@ -52,9 +59,9 @@ button.pf-c-button.pf-m-control::after {
 }
 
 #kc-login:hover {
-  background-color: rgb(41, 223, 132); /* darker blue on hover */
+  background-color: #142854d3; /* darker blue on hover */
   cursor: pointer;
-  color: rgb(51, 77, 219);
+  color: white;
 }
 
 h1#kc-page-title {
@@ -117,6 +124,8 @@ div.kc-logo-text {
     width: 300px;
     margin: 0 auto;
     background-size: contain;
+    position: absolute;
+    left: 50px;
 }
 
 div.kc-logo-text span {
@@ -546,13 +555,21 @@ ul#kc-totp-supported-apps {
     margin: 0 auto;
     box-shadow: var(--pf-global--BoxShadow--lg);
     padding: 0 20px;
-    max-width: 500px;
-    border-top: 4px solid rgb(41, 223, 132);
+    width: 466px;
+    border-radius: 12px;
+    background: #ffffffe9;
+    position: relative;
+    top: 150px;
+    /* border-top: 4px solid #142854; */
     /* border-color: var(--pf-global--primary-color--100); */
 }
 
 /*phone*/
 @media (max-width: 767px) {
+    div.kc-logo-text {
+        position: relative;
+        left: 0px;
+    }
     .login-pf-page .card-pf {
         max-width: none;
         margin-left: 0;
